@@ -1,0 +1,37 @@
+.cabecalho {
+    height: 50px;
+    width: 100vw;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px var(--secondary);
+
+    &__titulo {
+        font-weight: bold;
+        color: var(--cinza-claro);
+    }
+
+    &__nav {
+        display: flex;
+        gap: 10px;
+
+        &__item {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--cinza-claro);
+        }
+    }
+}
+
+.active {
+    display: none;
+}
+
+main {
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
